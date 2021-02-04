@@ -1,0 +1,265 @@
+
+#whole {
+    display: grid;
+    grid-auto-columns: minmax(200px, 400px);
+    grid-template: "category content content content";
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 70px;
+}
+#category {
+    grid-area: category;
+    width: 80%;
+}
+button {
+    margin: 5px 0px;
+    color: gray;
+    border: hidden;
+    background-color: initial;
+}
+.scroller {
+    width: 90%;
+    height: 400px;
+    overflow-y: scroll;
+    scrollbar-width: thin;
+}
+#content {
+    grid-area: content;
+    justify-content: center;
+    align-content: center;
+}
+.gridwhite {
+    display: grid;
+    color: white;
+    grid-template: "bg1 bg2 bg3";
+
+}
+.bg1 {
+    background: url("https://dl.airtable.com/exploreCoverImages%2FfV4xSIkYR76HsY81CPbu_pexels-photo-373966-upload.png");
+    background-size: 280px 220px;
+    background-repeat: no-repeat;
+    margin: 5px;
+    border-radius: 10px;
+    grid-area: bg1;
+  }
+  .bg2 {
+    background: url("https://dl.airtable.com/exploreCoverImages%2F8EvrdFccRiWiozD8UuSj_pexels-photo-474873.jpeg");
+    background-size: 280px 220px;
+    background-repeat: no-repeat;
+    margin: 5px;
+    border-radius: 10px;
+    grid-area: bg2;
+  }
+  .bg3 {
+    background: url("https://dl.airtable.com/exploreCoverImages%2FR4sZeHwRn6ZCxrVC5tZr_exploreCoverImages%252FwHQewJl3Tku9OU6MW6X7_jwimshwif14-jeff-sheldon.jpg");
+    background-size: 280px 220px;
+    background-repeat: no-repeat;
+    margin: 5px;
+    border-radius: 10px;
+    grid-area: bg3;
+  }
+  .comp1 {
+    background-color: blue;
+    opacity: .7;
+    width: 280px;
+    height: 220px;
+   
+  }
+.comp2 {
+    background-color: red;
+    opacity: .7;
+    width: 280px;
+    height: 220px;
+    
+}
+.comp3 {
+    background-color: blue;
+    opacity: .7;
+    width: 280px;
+    height: 220px;
+    
+}
+.gridwhite p {
+    text-align: center;
+    padding: 30% 0% 40% 0%;
+    font-size: 30px;
+    color: white;
+}
+.secondrow {
+    display: grid;
+    grid-template-areas: "sec1 sec2 sec3 sec4"
+                    "sec5 sec6 sec7 sec8";
+
+}
+.sec1 {
+    background: url("https://dl.airtable.com/exploreCoverImages%2FCNwwkzITxGL5SWmjWyew_exploreCoverImages%252FHqdWGSA7QQqGE8avD2Ow_f3uyey6ours-nicolai-berntsen.jpg");
+    background-size: 200px 120px;
+    background-repeat: no-repeat;
+    margin: 5px;
+    border-radius: 10px;
+    grid-area: sec1;
+   
+}
+.sec2 {
+    background: url("https://dl.airtable.com/exploreCoverImages%2F5DNQa1KQtWzE1jpviiq3_exploreCoverImages%252FmmGMuFSnyLwYE60isAwl_exploreCoverImages%252FbxZIdK7RQ226Ef4FDdOm_jufcqxgcxwa-samuel-zeller.jpg");
+    background-size: 200px 120px;
+    background-repeat: no-repeat;
+    margin: 5px;
+    border-radius: 10px;
+    grid-area: sec2;
+   
+}
+.sec3 {
+    background: url("https://dl.airtable.com/exploreCoverImages%2FwOHLliDUSve9y0eaghQZ_exploreCoverImages%252FXUbrYMmzQI2LWRxeiCJo_nasa.png");
+    background-size: 200px 120px;
+    background-repeat: no-repeat;
+    margin: 5px;
+    border-radius: 10px;
+    grid-area: sec3;
+}
+.sec4 {
+    background: url("https://dl.airtable.com/exploreCoverImages%2FyTr6js2IQ8Og08UQQRnd_exploreCoverImages%252FZFxxi0tNSdG1u6tug6K3_9hi8ujmsdza-braden-collum.jpg");
+    background-size: 200px 120px;
+    background-repeat: no-repeat;
+    margin: 5px;
+    border-radius: 10px;
+    grid-area: sec4;
+}
+.sec5 {
+    background: url("https://dl.airtable.com/exploreCoverImages%2FXtRZwWOTdWZBglSSUAOH_exploreCoverImages%252FjyrGFJGQb2kwL9iF9mK2_emtcwiq2txk-alan-emery.jpg");
+    background-size: 200px 120px;
+    background-repeat: no-repeat;
+    margin: 5px;
+    border-radius: 10px;
+    grid-area: sec5;
+}
+.sec6 {
+    background: url("https://dl.airtable.com/exploreCoverImages%2FmBDW9FVxRzGckBNIhFEV_exploreCoverImages%252F9i5vidWERBuvRqglcBS0_event-1597531_1280.jpg");
+    background-size: 200px 120px;
+    background-repeat: no-repeat;
+    margin: 5px;
+    border-radius: 10px;
+    grid-area: sec6;
+}
+.sec7 {
+    background: url("https://dl.airtable.com/exploreCoverImages%2FXiasARzZQ5mhULfWTBgN_exploreCoverImages%252FzAWswqcpReGigno2Njm6_x5hjlv7nzu4-breather.jpg");
+    background-size: 200px 120px;
+    background-repeat: no-repeat;
+    margin: 5px;
+    border-radius: 10px;
+    grid-area: sec7;
+}
+.sec8 {
+    background: url("https://dl.airtable.com/exploreCoverImages%2FvxqQIAK0QoCE4zPlKcX6_exploreCoverImages%252F4h0SYn11QByaLAztYTKw_exploreCoverImages%252F2PUdqEAqS5q8PkBb9nR2_kslnvacfehs-ran-berkovich.jpg");
+    background-size: 200px 120px;
+    background-repeat: no-repeat;
+    margin: 5px;
+    border-radius: 10px;
+    grid-area: sec8;
+}
+.seca {
+    background-color: blue;
+    opacity: .7;
+    width: 200px;
+    height: 120px;
+    
+}
+.secb {
+    background-color: blue;
+    opacity: .7;
+    width: 200px;
+    height: 120px;
+    
+}
+.secc {
+    background-color: blue;
+    opacity: .7;
+    width: 200px;
+    height: 120px;
+    
+}
+.secd {
+    background-color: blue;
+    opacity: .7;
+    width: 200px;
+    height: 120px;
+    
+}
+.sece {
+    background-color: blue;
+    opacity: .7;
+    width: 200px;
+    height: 120px;
+    
+}
+.secf {
+    background-color: blue;
+    opacity: .7;
+    width: 200px;
+    height: 120px;
+    
+}
+.secg {
+    background-color: blue;
+    opacity: .7;
+    width: 200px;
+    height: 120px;
+    
+}
+.sech {
+    background-color: blue;
+    opacity: .7;
+    width: 200px;
+    height: 120px;
+    
+}
+.secondrow p {
+    text-align: center;
+    padding-top: 20%;
+    font-size: 20px;
+    color: white;
+}
+#info1 {
+    display: grid;
+    grid-template: "info1_1 info1_2 info1_3";
+}
+.info1_1 {
+    grid-area: info1_1;
+    border: gray solid 1px;
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 300px;
+    width: 280px;
+    border-radius: 10px;
+}
+.info1_2 {
+    grid-area: info1_2;
+    border: gray solid 1px;
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 300px;
+    width: 280px;
+    border-radius: 10px;
+}
+.info1_3 {
+    grid-area: info1_3;
+    border: gray solid 1px;
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 300px;
+    width: 280px;
+    border-radius: 10px;
+}
+#info1 img {
+    width: 100%;
+    height: 150px;
+    border-radius: 10px;
+}
+#info1 h3+div {
+    padding: 10px;
+    color: grey;
+}
+#info1 h3 {
+    padding: 10px;
+}
