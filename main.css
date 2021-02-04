@@ -1,0 +1,231 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+li{
+    list-style: none;
+}
+
+.topbar{
+    padding: 10px;
+    background-color: #f82b60;
+    text-align: center;
+    color: white;
+    font-size: 16px;
+    font-family: sans-serif;
+}
+
+nav{
+    display: flex;
+    width: 100%;
+    padding: 10px 0 10px 0;
+    font-family: sans-serif;
+    position: absolute;
+    background-color: white;
+}
+
+.logo{
+    width: 13%;
+    text-align: end;
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: 24px;
+}
+.logo img{
+    height: 40px;
+}
+.navlist{
+    display: flex;
+    /* justify-content: space-around; */
+    width: 45%; 
+    padding: 10px;
+    gap: 50px;
+    font-size: 16px;
+}
+
+.contact{
+    display: flex;
+    width: 30%;
+    justify-content:flex-end;
+    gap: 50px;
+    font-size: 16px;
+    align-items: center;
+}
+.contact li button{
+    background-color: rgb(81, 106, 158);
+    color: white;
+    width: 120px;
+    padding: 10px;
+    border: none;
+    border-radius: 50px;
+}
+.slider img{
+    height: 100%;
+    width: 100%;
+    
+}
+.slider .title{
+    position: absolute;
+    top: 40%;
+    left: 10%;
+    color: white;
+    font-family: sans-serif;
+}
+.slider .title h1{
+    font-size: 52px;
+ }
+.slider .title p{
+   font-size: 22px;
+   margin-top: 10px;
+   font-weight: bolder;
+}
+.slider .title button{
+    font-size: 22px;
+    width: 220px;
+    padding: 10px;
+    background-color: turquoise;
+    border: none;
+    border-radius: 50px;
+    color: white;
+    margin-top: 10px;
+ }
+ 
+ /* ======================= Main ======================= */
+
+ .brands{
+     padding: 50px;
+     line-height: 2;
+ }
+ .brands p{
+    text-align: center;
+    font-size: 24px;
+ }
+ .band-logos{
+     display: flex;
+     justify-content: center;
+     gap:25px;
+     font-size: 28px;
+     color: rgb(126, 126, 126);
+ }
+
+ /*-----------Intro----------*/
+ .intro{
+     display: grid;
+     grid-template-columns: 1fr 1fr 1fr;
+ }
+ .intro .col{
+    height:100%;
+    width: 100%;
+    padding: 30px 0 30px 0;
+    text-align: center;
+
+}
+.intro .col-1 , .intro .col-5{
+    grid-column: 1 / 3;
+    width: 90%;
+}
+.intro .col-4{
+    grid-column: 2/4;
+}
+.intro .col-2, .intro .col-6{
+    margin-left: -20%;
+    width: 120%;
+}
+.intro .col video{
+    height: 400px;
+    width: auto;
+    border-radius: 20px;
+    -webkit-box-shadow: 10px 10px 50px -18px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 50px -18px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 50px -18px rgba(0,0,0,0.75);
+}
+.intro .col h1:nth-child(odd){
+    color: rgb(60, 126, 180);
+    text-align: left;
+}
+.intro .col h1:nth-child(2){
+    text-align: right;
+    background-color: rosybrown;
+}
+ /* ======================= FOOTER Start======================= */
+
+ footer{
+     padding: 100px 50px 100px 50px;
+     display: flex;
+     justify-content: space-around;
+     font-family: sans-serif;
+ }
+
+ footer div ul{
+    display: flex;
+    flex-direction: column;
+    gap:15px;
+ }
+
+ footer .col-1 img{
+     height: 50px;
+}
+
+ footer .col-5{
+    display: flex;
+   margin-top:0;
+   flex-direction: column;
+   justify-content: space-between;
+}
+ 
+footer div li a{
+    color: rgb(126, 126, 126);
+    text-decoration: none;
+    position:relative;
+}
+
+footer div li a::after{
+    content:'';
+    display: block;
+    height: 2px;
+    background: #d6d6d6;
+    position:     absolute;
+    left:         0;
+    right:        0;
+}
+
+footer div li a:hover::after{
+    background: #242424;
+    opacity: 0.8;
+}
+
+footer div li #hiring{
+    color: rgb(60, 126, 180);
+    position:relative;
+}
+footer div li #hiring:hover{
+    color: blue;
+}
+
+footer div li #hiring::after{
+    content:'';
+    display: block;
+    height: 2px;
+    background-color: rgb(60, 126, 180);
+    position:     absolute;
+    left:         0;
+    right:        0;
+}
+footer div li #hiring:hover::after{
+    background-color: blue;
+}
+.col-5 .row-1 li:nth-child(2){
+    font-size: 14px;
+    color: rgb(126, 126, 126);
+}
+
+.col-5 .row-2 li:nth-child(3){
+    font-size: 12px;
+    color: rgb(126, 126, 126);
+}
+
+
+
+ /* ======================= FOOTER End======================= */
