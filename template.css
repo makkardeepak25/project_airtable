@@ -1,0 +1,254 @@
+
+#whole {
+    display: grid;
+    grid-auto-columns: minmax(200px, 400px);
+    grid-template: "category content content content";
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 70px;
+}
+#category {
+    border: red solid 1px;
+    grid-area: category;
+    width: 80%;
+}
+button {
+    margin: 5px 0px;
+    color: gray;
+    border: hidden;
+    background-color: initial;
+}
+.scroller {
+    width: 90%;
+    height: 400px;
+    overflow-y: scroll;
+    scrollbar-color: rebeccapurple green;
+    scrollbar-width: thin;
+}
+#content {
+    border: blue solid 1px;
+    grid-area: content;
+    justify-content: center;
+    align-content: center;
+}
+.gridwhite {
+    display: grid;
+    color: white;
+    grid-template: "bg1 bg2 bg3";
+    border: green solid 1px;
+
+}
+.bg1 {
+    background: url("https://dl.airtable.com/exploreCoverImages%2FfV4xSIkYR76HsY81CPbu_pexels-photo-373966-upload.png");
+    background-size: 250px 250px;
+    background-repeat: no-repeat;
+    margin: 5px;
+    border-radius: 10px;
+    grid-area: bg1;
+  }
+  .bg2 {
+    background: url("https://dl.airtable.com/exploreCoverImages%2FfV4xSIkYR76HsY81CPbu_pexels-photo-373966-upload.png");
+    background-size: 250px 250px;
+    background-repeat: no-repeat;
+    margin: 5px;
+    border-radius: 10px;
+    grid-area: bg2;
+  }
+  .bg3 {
+    background: url("https://dl.airtable.com/exploreCoverImages%2FfV4xSIkYR76HsY81CPbu_pexels-photo-373966-upload.png");
+    background-size: 250px 250px;
+    background-repeat: no-repeat;
+    margin: 5px;
+    border-radius: 10px;
+    grid-area: bg3;
+  }
+  .comp1 {
+    background-color: blue;
+    opacity: .4;
+    width: 250px;
+    height: 250px;
+   
+  }
+.comp2 {
+    background-color: red;
+    opacity: .4;
+    width: 250px;
+    height: 250px;
+    
+}
+.comp3 {
+    background-color: blue;
+    opacity: .4;
+    width: 250px;
+    height: 250px;
+    
+}
+.gridwhite p {
+    text-align: center;
+    padding-top: 50%;
+    font-size: 30px;
+    color: white;
+}
+.secondrow {
+    display: grid;
+    grid-template-areas: "sec1 sec2 sec3 sec4"
+                    "sec5 sec6 sec7 sec8";
+
+}
+.sec1 {
+    background: url("https://dl.airtable.com/exploreCoverImages%2FfV4xSIkYR76HsY81CPbu_pexels-photo-373966-upload.png");
+    background-size: 200px 120px;
+    background-repeat: no-repeat;
+    margin: 5px;
+    border-radius: 10px;
+    grid-area: sec1;
+   
+}
+.sec2 {
+    background: url("https://dl.airtable.com/exploreCoverImages%2FfV4xSIkYR76HsY81CPbu_pexels-photo-373966-upload.png");
+    background-size: 200px 120px;
+    background-repeat: no-repeat;
+    margin: 5px;
+    border-radius: 10px;
+    grid-area: sec2;
+   
+}
+.sec3 {
+    background: url("https://dl.airtable.com/exploreCoverImages%2FfV4xSIkYR76HsY81CPbu_pexels-photo-373966-upload.png");
+    background-size: 200px 120px;
+    background-repeat: no-repeat;
+    margin: 5px;
+    border-radius: 10px;
+    grid-area: sec3;
+}
+.sec4 {
+    background: url("https://dl.airtable.com/exploreCoverImages%2FfV4xSIkYR76HsY81CPbu_pexels-photo-373966-upload.png");
+    background-size: 200px 120px;
+    background-repeat: no-repeat;
+    margin: 5px;
+    border-radius: 10px;
+    grid-area: sec4;
+}
+.sec5 {
+    background: url("https://dl.airtable.com/exploreCoverImages%2FfV4xSIkYR76HsY81CPbu_pexels-photo-373966-upload.png");
+    background-size: 200px 120px;
+    background-repeat: no-repeat;
+    margin: 5px;
+    border-radius: 10px;
+    grid-area: sec5;
+}
+.sec6 {
+    background: url("https://dl.airtable.com/exploreCoverImages%2FfV4xSIkYR76HsY81CPbu_pexels-photo-373966-upload.png");
+    background-size: 200px 120px;
+    background-repeat: no-repeat;
+    margin: 5px;
+    border-radius: 10px;
+    grid-area: sec6;
+}
+.sec7 {
+    background: url("https://dl.airtable.com/exploreCoverImages%2FfV4xSIkYR76HsY81CPbu_pexels-photo-373966-upload.png");
+    background-size: 200px 120px;
+    background-repeat: no-repeat;
+    margin: 5px;
+    border-radius: 10px;
+    grid-area: sec7;
+}
+.sec8 {
+    background: url("https://dl.airtable.com/exploreCoverImages%2FfV4xSIkYR76HsY81CPbu_pexels-photo-373966-upload.png");
+    background-size: 200px 120px;
+    background-repeat: no-repeat;
+    margin: 5px;
+    border-radius: 10px;
+    grid-area: sec8;
+}
+.seca {
+    background-color: blue;
+    opacity: .4;
+    width: 200px;
+    height: 120px;
+    
+}
+.secb {
+    background-color: blue;
+    opacity: .4;
+    width: 200px;
+    height: 120px;
+    
+}
+.secc {
+    background-color: blue;
+    opacity: .4;
+    width: 200px;
+    height: 120px;
+    
+}
+.secd {
+    background-color: blue;
+    opacity: .4;
+    width: 200px;
+    height: 120px;
+    
+}
+.sece {
+    background-color: blue;
+    opacity: .4;
+    width: 200px;
+    height: 120px;
+    
+}
+.secf {
+    background-color: blue;
+    opacity: .4;
+    width: 200px;
+    height: 120px;
+    
+}
+.secg {
+    background-color: blue;
+    opacity: .4;
+    width: 200px;
+    height: 120px;
+    
+}
+.sech {
+    background-color: blue;
+    opacity: .4;
+    width: 200px;
+    height: 120px;
+    
+}
+.secondrow p {
+    text-align: center;
+    padding-top: 20%;
+    font-size: 20px;
+    color: white;
+}
+#info1 {
+    display: grid;
+    grid-template: "info1_1 info1_2 info1_3";
+}
+.info1_1 {
+    grid-area: info1_1;
+    background-color: rgb(226, 217, 217);
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 300px;
+}
+.info1_2 {
+    grid-area: info1_2;
+    background-color: rgb(226, 217, 217);
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 300px;
+}
+.info1_3 {
+    grid-area: info1_3;
+    background-color: rgb(226, 217, 217);
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 300px;
+}
+#info1 img {
+    width: 100%;
+}

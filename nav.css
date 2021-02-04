@@ -1,0 +1,62 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+li{
+    list-style: none;
+}
+
+.topbar{
+    padding: 10px;
+    background-color: #f82b60;
+    text-align: center;
+    color: white;
+    font-size: 16px;
+    font-family: sans-serif;
+}
+
+nav{
+    display: flex;
+    width: 100%;
+    padding: 10px 0 10px 0;
+    font-family: sans-serif;
+    position: absolute;
+    background-color: white;
+}
+
+.logo{
+    width: 13%;
+    text-align: end;
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: 24px;
+}
+.logo img{
+    height: 40px;
+}
+.navlist{
+    display: flex;
+    width: 45%; 
+    padding: 10px;
+    gap: 50px;
+    font-size: 16px;
+}
+
+.contact{
+    display: flex;
+    width: 30%;
+    justify-content:flex-end;
+    gap: 50px;
+    font-size: 16px;
+    align-items: center;
+}
+.contact li button{
+    background-color: rgb(81, 106, 158);
+    color: white;
+    width: 120px;
+    padding: 10px;
+    border: none;
+    border-radius: 50px;
+}
