@@ -20,7 +20,7 @@ nav{
     width: 100%;
     padding: 10px 0 10px 0;
     font-family: sans-serif;
-    position: absolute;
+    position: fixed;
     background-color: white;
 }
 

@@ -11,6 +11,8 @@
 #category {
     grid-area: category;
     width: 80%;
+    /* position: fixed;
+    top: 60px; */
 }
 button {
     margin: 5px 0px;
@@ -20,7 +22,7 @@ button {
 }
 .scroller {
     width: 90%;
-    height: 400px;
+    height: 430px;
     overflow-y: scroll;
     scrollbar-width: thin;
 }
