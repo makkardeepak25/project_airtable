@@ -282,3 +282,72 @@ button {
     padding: 10px;
     color: grey;
 }
+
+
+
+
+footer{
+    padding: 100px 50px 100px 50px;
+    display: flex;
+    justify-content: space-around;
+    font-family: sans-serif;
+}
+footer div ul{
+   display: flex;
+   flex-direction: column;
+   gap:15px;
+}
+footer .col-1 img{
+    height: 50px;
+}
+footer .col-5{
+   display: flex;
+  margin-top:0;
+  flex-direction: column;
+  justify-content: space-between;
+}
+footer div li a{
+   color: rgb(126, 126, 126);
+   text-decoration: none;
+   position:relative;
+}
+footer div li a::after{
+   content:'';
+   display: block;
+   height: 2px;
+   background: #D6D6D6;
+   position:     absolute;
+   left:         0;
+   right:        0;
+}
+footer div li a:hover::after{
+   background: #242424;
+   opacity: 0.8;
+}
+footer div li #hiring{
+   color: rgb(60, 126, 180);
+   position:relative;
+}
+footer div li #hiring:hover{
+   color: blue;
+}
+footer div li #hiring::after{
+   content:'';
+   display: block;
+   height: 2px;
+   background-color: rgb(60, 126, 180);
+   position:     absolute;
+   left:         0;
+   right:        0;
+}
+footer div li #hiring:hover::after{
+   background-color: blue;
+}
+.col-5 .row-1 li:nth-child(2){
+   font-size: 14px;
+   color: rgb(126, 126, 126);
+}
+.col-5 .row-2 li:nth-child(3){
+   font-size: 12px;
+   color: rgb(126, 126, 126);
+}
