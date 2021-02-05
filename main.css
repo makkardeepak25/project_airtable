@@ -91,7 +91,7 @@ nav{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    display: none;
+    /* display: none; */
 }
 .hamburger .line1{
     height: 3px;
@@ -123,14 +123,15 @@ nav{
     }
     .hamburger {
         display: block;
+        width: 100%;
     }
     .navlist{
         position:absolute;
         flex-direction: column;
-        background-color: white; 
+        background-color: rgb(141, 83, 83); 
         width: 100%;
         top: 50px;
-        display: none;
+        /* display: none; */
     }
     .contact{
         display: none;
