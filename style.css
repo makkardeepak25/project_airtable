@@ -1,0 +1,206 @@
+/* pricing style */
+#pricing-layout{
+     
+    gap:15px;
+    height: 2400px;
+     /* /* border-radius: 5px; */
+}
+#pricing-layout>div:nth-child(3){ 
+    height: 180px;
+}
+#pricing-layout h1{
+    font-size: 20px;
+    text-align: center;
+}
+#pricing-layout h3{
+
+    color: grey;
+}
+#simple-pricing-cont{
+    height:50px;
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: row;
+   
+}
+.simple-pricing{
+   height: 100%;
+    width: 40%;
+    /* border: 1px solid grey; */
+}
+.free{
+    height: 100%;
+    width: 14%;
+    margin-left: 1%;
+    /* border: 1px solid grey; */
+}
+.pro{
+    height: 100%;
+    width: 14%;
+    margin-left: 1%;
+    /* border: 1px solid grey; */
+    background: cadetblue;
+}
+.plus{
+    height: 100%;
+    width: 14%;
+    margin-left: 1%;
+    /* border: 1px solid grey; */
+    background: burlywood;
+}
+.enterprise{
+    height: 100%;
+    width: 14%;
+    margin-left: 1%;
+    background: black;
+    color: white;
+    /* border: 1px solid grey; */
+}
+#pricing-layout img{
+    width: 25%;
+    height: 20%;
+    text-align: center;
+}
+#compny-pic-cont{
+    display: flex;
+    height: 80px;
+    flex-direction: row;
+    color: grey;
+    /* background-color: rgb(190, 184, 184); */
+    /* border: 1px solid red; */
+    margin: 2%
+}
+#compny-pic-cont>div{
+    width: 15%;
+    height: 100%;
+    /* border: 1px solid black; */
+    text-align: center;
+
+    padding-bottom: 10px;
+    margin-left: 5%;
+}
+#compny-pic-cont>div>div{
+    width: 55%;
+    height: 100%;
+    /* border: 1px solid black; */
+    text-align: center;
+    float: left;
+    font-size: 16px;
+  
+    padding-bottom: 10px;
+    margin-left: 5%;
+}
+#compny-pic-cont>div>div:nth-child(1){
+    width: 30%;
+    padding-top: 20px;
+    height: 60%;
+    /* border: 1px solid black;
+    text-align: center; */
+
+    padding-bottom: 10px;
+    margin-left: 5%;
+}
+#compny-pic-cont img{
+    width: 100%;
+    height: 100%;
+    text-align: right;
+}
+#billing-cont>div>div{
+    width: 37%;
+    height: 30px;
+    /* /* border:1px solid red; */
+    float: left; 
+    /* text-align: center; */
+    padding-left: 15x;
+     color: grey;
+    margin-left: 10%;
+    margin-bottom: 2%;
+ 
+}
+#billing-cont>div>div:nth-child(1){
+    text-align: right;
+    padding-right: 15px;
+}
+#question-cont{
+    height: 1200px;
+    /* border: 1px solid red; */
+}
+mark{
+    color: blue;
+    background: none;
+}
+#question-cont>div>div{
+    height: 40%;
+    width: 28%;
+    float: left;
+    margin: 2%;
+    /* border: 1px solid green; */
+}
+#question-cont p{
+    color: grey;
+}
+footer{
+     padding: 100px 50px 100px 50px;
+     display: flex;
+     justify-content: space-around;
+     font-family: sans-serif;
+ }
+ footer div ul{
+    display: flex;
+    flex-direction: column;
+    gap:15px;
+ }
+ footer .col-1 img{
+     height: 50px;
+}
+ footer .col-5{
+    display: flex;
+   margin-top:0;
+   flex-direction: column;
+   justify-content: space-between;
+}
+footer div li a{
+    color: rgb(126, 126, 126);
+    text-decoration: none;
+    position:relative;
+}
+footer div li a::after{
+    content:'';
+    display: block;
+    height: 2px;
+    background: #D6D6D6;
+    position:     absolute;
+    left:         0;
+    right:        0;
+}
+footer div li a:hover::after{
+    background: #242424;
+    opacity: 0.8;
+}
+footer div li #hiring{
+    color: rgb(60, 126, 180);
+    position:relative;
+}
+footer div li #hiring:hover{
+    color: blue;
+}
+footer div li #hiring::after{
+    content:'';
+    display: block;
+    height: 2px;
+    background-color: rgb(60, 126, 180);
+    position:     absolute;
+    left:         0;
+    right:        0;
+}
+footer div li #hiring:hover::after{
+    background-color: blue;
+}
+.col-5 .row-1 li:nth-child(2){
+    font-size: 14px;
+    color: rgb(126, 126, 126);
+}
+.col-5 .row-2 li:nth-child(3){
+    font-size: 12px;
+    color: rgb(126, 126, 126);
+}
