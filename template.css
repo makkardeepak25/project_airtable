@@ -69,38 +69,50 @@ footer{
     justify-content: space-around;
     font-family: sans-serif;
 }
+footer li {
+    width: 150px;
+}
 footer div ul{
    display: flex;
    flex-direction: column;
    gap:15px;
+   margin: 0px 40px;
 }
+
 footer .col-1 img{
+    margin-left: 900px;
+    margin-right: 50px;
     height: 50px;
 }
+
 footer .col-5{
    display: flex;
   margin-top:0;
   flex-direction: column;
   justify-content: space-between;
 }
+
 footer div li a{
    color: rgb(126, 126, 126);
    text-decoration: none;
    position:relative;
 }
+
 footer div li a::after{
    content:'';
    display: block;
    height: 2px;
-   background: #D6D6D6;
+   background: #d6d6d6;
    position:     absolute;
    left:         0;
    right:        0;
 }
+
 footer div li a:hover::after{
    background: #242424;
    opacity: 0.8;
 }
+
 footer div li #hiring{
    color: rgb(60, 126, 180);
    position:relative;
@@ -108,6 +120,7 @@ footer div li #hiring{
 footer div li #hiring:hover{
    color: blue;
 }
+
 footer div li #hiring::after{
    content:'';
    display: block;
@@ -124,12 +137,13 @@ footer div li #hiring:hover::after{
    font-size: 14px;
    color: rgb(126, 126, 126);
 }
+
 .col-5 .row-2 li:nth-child(3){
    font-size: 12px;
    color: rgb(126, 126, 126);
 }
 /* ====================footer end ================== */
-
+@media only screen and (min-width: 1100px) {
 #whole {
     display: grid;
     grid-auto-columns: minmax(200px, 400px);
@@ -425,11 +439,10 @@ button {
     padding: 10px;
     color: grey;
 }
+}
 
-
-
-
-/* @media only screen and (max-width: 1100px) {
+/* ==================  media medium ================ */
+@media only screen and (max-width: 1100px) {
     #whole {
         display: grid;
         grid-auto-columns: minmax(200px, 400px);
@@ -439,21 +452,499 @@ button {
         margin-right: auto;
         padding-top: 70px;
     }
+    #category {
+        grid-area: category;
+        width: 80%;
+        /* position: fixed; */
+    }
+    #category img {
+        width: 20px;
+    }
+    #searchTemplate {
+        height: 27px;
+        width: 70%;
+        background-color: rgb(226, 219, 219);
+        border-radius: 5px;
+        border: none;
+        text-align: center;
+    }
+    button {
+        margin: 5px 0px;
+        color: gray;
+        border: hidden;
+        background-color: initial;
+    }
+    .scroller {
+        width: 90%;
+        height: 430px;
+        overflow-y: scroll;
+        scrollbar-width: thin;
+    }
+    #content {
+        grid-area: content;
+        justify-content: center;
+        align-content: center;
+    }
     .gridwhite {
         display: grid;
         color: white;
         grid-template: "bg1 bg2";
+        height: 240px;
     
+    }
+    .bg1 {
+        background: url("https://dl.airtable.com/exploreCoverImages%2FfV4xSIkYR76HsY81CPbu_pexels-photo-373966-upload.png");
+        background-size: 280px 220px;
+        background-repeat: no-repeat;
+        margin: 5px;
+        border-radius: 10px;
+        grid-area: bg1;
+      }
+      .bg2 {
+        background: url("https://dl.airtable.com/exploreCoverImages%2F8EvrdFccRiWiozD8UuSj_pexels-photo-474873.jpeg");
+        background-size: 280px 220px;
+        background-repeat: no-repeat;
+        margin: 5px;
+        border-radius: 10px;
+        grid-area: bg2;
+      }
+      .comp1 {
+        background-color: rgb(9, 99, 172);
+        opacity: .7;
+        width: 280px;
+        height: 220px;
+        border-radius: 10px;
+       
+      }
+    .comp2 {
+        background-color: rgb(255, 0, 149);
+        opacity: .7;
+        width: 280px;
+        height: 220px;
+        border-radius: 10px;
+        
+    }
+    .gridwhite p {
+        text-align: center;
+        padding: 30% 0% 40% 0%;
+        font-size: 30px;
+        color: white;
     }
     .secondrow {
         display: grid;
         grid-template-areas: "sec1 sec2 sec3" 
-                             "sec4 sec5 sec6 ";
+                              "sec4 sec5 sec6";
     
+    }
+    .sec1 {
+        background: url("https://dl.airtable.com/exploreCoverImages%2FCNwwkzITxGL5SWmjWyew_exploreCoverImages%252FHqdWGSA7QQqGE8avD2Ow_f3uyey6ours-nicolai-berntsen.jpg");
+        background-size: 200px 120px;
+        background-repeat: no-repeat;
+        margin: 5px;
+        border-radius: 10px;
+        grid-area: sec1;
+       
+    }
+    .sec2 {
+        background: url("https://dl.airtable.com/exploreCoverImages%2F5DNQa1KQtWzE1jpviiq3_exploreCoverImages%252FmmGMuFSnyLwYE60isAwl_exploreCoverImages%252FbxZIdK7RQ226Ef4FDdOm_jufcqxgcxwa-samuel-zeller.jpg");
+        background-size: 200px 120px;
+        background-repeat: no-repeat;
+        margin: 5px;
+        border-radius: 10px;
+        grid-area: sec2;
+       
+    }
+    .sec3 {
+        background: url("https://dl.airtable.com/exploreCoverImages%2FwOHLliDUSve9y0eaghQZ_exploreCoverImages%252FXUbrYMmzQI2LWRxeiCJo_nasa.png");
+        background-size: 200px 120px;
+        background-repeat: no-repeat;
+        margin: 5px;
+        border-radius: 10px;
+        grid-area: sec3;
+    }
+    .sec4 {
+        background: url("https://dl.airtable.com/exploreCoverImages%2FyTr6js2IQ8Og08UQQRnd_exploreCoverImages%252FZFxxi0tNSdG1u6tug6K3_9hi8ujmsdza-braden-collum.jpg");
+        background-size: 200px 120px;
+        background-repeat: no-repeat;
+        margin: 5px;
+        border-radius: 10px;
+        grid-area: sec4;
+    }
+    .sec5 {
+        background: url("https://dl.airtable.com/exploreCoverImages%2FXtRZwWOTdWZBglSSUAOH_exploreCoverImages%252FjyrGFJGQb2kwL9iF9mK2_emtcwiq2txk-alan-emery.jpg");
+        background-size: 200px 120px;
+        background-repeat: no-repeat;
+        margin: 5px;
+        border-radius: 10px;
+        grid-area: sec5;
+    }
+    .sec6 {
+        background: url("https://dl.airtable.com/exploreCoverImages%2FmBDW9FVxRzGckBNIhFEV_exploreCoverImages%252F9i5vidWERBuvRqglcBS0_event-1597531_1280.jpg");
+        background-size: 200px 120px;
+        background-repeat: no-repeat;
+        margin: 5px;
+        border-radius: 10px;
+        grid-area: sec6;
+    }
+    .seca {
+        background-color: rgb(167, 9, 69);
+        border-radius: 10px;
+        opacity: .7;
+        width: 200px;
+        height: 120px;
+        
+    }
+    .secb {
+        background-color: rgb(76, 76, 146);
+        border-radius: 10px;
+        opacity: .7;
+        width: 200px;
+        height: 120px;
+        
+    }
+    .secc {
+        background-color: rgb(182, 79, 10);
+        border-radius: 10px;
+        opacity: .7;
+        width: 200px;
+        height: 120px;
+        
+    }
+    .secd {
+        background-color: rgb(29, 110, 185);
+        border-radius: 10px;
+        opacity: .7;
+        width: 200px;
+        height: 120px;
+        
+    }
+    .sece {
+        background-color: rgb(198, 211, 13);
+        border-radius: 10px;
+        opacity: .7;
+        width: 200px;
+        height: 120px;
+        
+    }
+    .secf {
+        background-color: rgb(240, 13, 221);
+        border-radius: 10px;
+        opacity: .7;
+        width: 200px;
+        height: 120px;
+        
+    }
+    .secondrow p {
+        text-align: center;
+        padding-top: 20%;
+        font-size: 20px;
+        color: white;
     }
     .info1 {
         display: grid;
         grid-template: "info1_1 info1_2" 
                         "info1_3 .";
     }
-} */
+    .info1_1 {
+        grid-area: info1_1;
+        border:  rgb(214, 211, 211) solid 1px;
+        margin-left: 10px;
+        margin-right: 10px;
+        height: 300px;
+        width: 280px;
+        border-radius: 10px;
+    }
+    .info1_2 {
+        grid-area: info1_2;
+        border:  rgb(214, 211, 211) solid 1px;
+        margin-left: 10px;
+        margin-right: 10px;
+        height: 300px;
+        width: 280px;
+        border-radius: 10px;
+    }
+    .info1_3 {
+        grid-area: info1_3;
+        border: rgb(214, 211, 211) solid 1px;
+        margin-left: 10px;
+        margin-right: 10px;
+        height: 300px;
+        width: 280px;
+        border-radius: 10px;
+    }
+    .info1_1:hover img, .info1_2:hover img, .info1_3:hover img {
+        opacity: .5;
+    }
+    .info1 img {
+        width: 100%;
+        height: 150px;
+        border-radius: 10px;
+    }
+    .info1 h3+div {
+        padding: 10px;
+        color: grey;
+    }
+    .info1 h3 {
+        padding: 10px;
+    }
+    .conhead {
+        font-size: 20px;
+        padding: 10px;
+        color: grey;
+    }
+    }
+
+    /* =========== small size ================= */
+
+    @media only screen and (max-width: 830px) {
+        #whole {
+            display: grid;
+            grid-auto-columns: minmax(200px, 400px);
+            grid-template: "content content content";
+            width: 90%;
+            margin-left: auto;
+            margin-right: auto;
+            padding-top: 70px;
+        }
+        #category {
+            grid-area: category;
+            width: 80%;
+            /* position: fixed; */
+        }
+        #category img {
+            width: 20px;
+        }
+        #searchTemplate {
+            height: 27px;
+            width: 70%;
+            background-color: rgb(226, 219, 219);
+            border-radius: 5px;
+            border: none;
+            text-align: center;
+        }
+        button {
+            margin: 5px 0px;
+            color: gray;
+            border: hidden;
+            background-color: initial;
+        }
+        .scroller {
+            width: 90%;
+            height: 430px;
+            overflow-y: scroll;
+            scrollbar-width: thin;
+        }
+        #content {
+            grid-area: content;
+            justify-content: center;
+            align-content: center;
+        }
+        .gridwhite {
+            display: grid;
+            color: white;
+            grid-template: "bg1 bg2";
+            height: 240px;
+        
+        }
+        .bg1 {
+            background: url("https://dl.airtable.com/exploreCoverImages%2FfV4xSIkYR76HsY81CPbu_pexels-photo-373966-upload.png");
+            background-size: 280px 220px;
+            background-repeat: no-repeat;
+            margin: 5px;
+            border-radius: 10px;
+            grid-area: bg1;
+          }
+          .bg2 {
+            background: url("https://dl.airtable.com/exploreCoverImages%2F8EvrdFccRiWiozD8UuSj_pexels-photo-474873.jpeg");
+            background-size: 280px 220px;
+            background-repeat: no-repeat;
+            margin: 5px;
+            border-radius: 10px;
+            grid-area: bg2;
+          }
+          .comp1 {
+            background-color: rgb(9, 99, 172);
+            opacity: .7;
+            width: 280px;
+            height: 220px;
+            border-radius: 10px;
+           
+          }
+        .comp2 {
+            background-color: rgb(255, 0, 149);
+            opacity: .7;
+            width: 280px;
+            height: 220px;
+            border-radius: 10px;
+            
+        }
+        .gridwhite p {
+            text-align: center;
+            padding: 30% 0% 40% 0%;
+            font-size: 30px;
+            color: white;
+        }
+        .secondrow {
+            display: grid;
+            grid-template-areas: "sec1 sec2" 
+                            "sec3 sec4"
+                            "sec5 sec6";
+        
+        }
+        .sec1 {
+            background: url("https://dl.airtable.com/exploreCoverImages%2FCNwwkzITxGL5SWmjWyew_exploreCoverImages%252FHqdWGSA7QQqGE8avD2Ow_f3uyey6ours-nicolai-berntsen.jpg");
+            background-size: 250px 120px;
+            background-repeat: no-repeat;
+            margin: 5px;
+            border-radius: 10px;
+            grid-area: sec1;
+           
+        }
+        .sec2 {
+            background: url("https://dl.airtable.com/exploreCoverImages%2F5DNQa1KQtWzE1jpviiq3_exploreCoverImages%252FmmGMuFSnyLwYE60isAwl_exploreCoverImages%252FbxZIdK7RQ226Ef4FDdOm_jufcqxgcxwa-samuel-zeller.jpg");
+            background-size: 250px 120px;
+            background-repeat: no-repeat;
+            margin: 5px;
+            border-radius: 10px;
+            grid-area: sec2;
+           
+        }
+        .sec3 {
+            background: url("https://dl.airtable.com/exploreCoverImages%2FwOHLliDUSve9y0eaghQZ_exploreCoverImages%252FXUbrYMmzQI2LWRxeiCJo_nasa.png");
+            background-size: 250px 120px;
+            background-repeat: no-repeat;
+            margin: 5px;
+            border-radius: 10px;
+            grid-area: sec3;
+        }
+        .sec4 {
+            background: url("https://dl.airtable.com/exploreCoverImages%2FyTr6js2IQ8Og08UQQRnd_exploreCoverImages%252FZFxxi0tNSdG1u6tug6K3_9hi8ujmsdza-braden-collum.jpg");
+            background-size: 250px 120px;
+            background-repeat: no-repeat;
+            margin: 5px;
+            border-radius: 10px;
+            grid-area: sec4;
+        }
+        .sec5 {
+            background: url("https://dl.airtable.com/exploreCoverImages%2FXtRZwWOTdWZBglSSUAOH_exploreCoverImages%252FjyrGFJGQb2kwL9iF9mK2_emtcwiq2txk-alan-emery.jpg");
+            background-size: 250px 120px;
+            background-repeat: no-repeat;
+            margin: 5px;
+            border-radius: 10px;
+            grid-area: sec5;
+        }
+        .sec6 {
+            background: url("https://dl.airtable.com/exploreCoverImages%2FmBDW9FVxRzGckBNIhFEV_exploreCoverImages%252F9i5vidWERBuvRqglcBS0_event-1597531_1280.jpg");
+            background-size: 250px 120px;
+            background-repeat: no-repeat;
+            margin: 5px;
+            border-radius: 10px;
+            grid-area: sec6;
+        }
+        .seca {
+            background-color: rgb(167, 9, 69);
+            border-radius: 10px;
+            opacity: .7;
+            width: 250px;
+            height: 120px;
+            
+        }
+        .secb {
+            background-color: rgb(76, 76, 146);
+            border-radius: 10px;
+            opacity: .7;
+            width: 250px;
+            height: 120px;
+            
+        }
+        .secc {
+            background-color: rgb(182, 79, 10);
+            border-radius: 10px;
+            opacity: .7;
+            width: 250px;
+            height: 120px;
+            
+        }
+        .secd {
+            background-color: rgb(29, 110, 185);
+            border-radius: 10px;
+            opacity: .7;
+            width: 250px;
+            height: 120px;
+            
+        }
+        .sece {
+            background-color: rgb(198, 211, 13);
+            border-radius: 10px;
+            opacity: .7;
+            width: 250px;
+            height: 120px;
+            
+        }
+        .secf {
+            background-color: rgb(240, 13, 221);
+            border-radius: 10px;
+            opacity: .7;
+            width: 250px;
+            height: 120px;
+            
+        }
+        .secondrow p {
+            text-align: center;
+            padding-top: 20%;
+            font-size: 20px;
+            color: white;
+        }
+        .info1 {
+            display: grid;
+            grid-template: "info1_1 info1_2" 
+                            "info1_3 .";
+        }
+        .info1_1 {
+            grid-area: info1_1;
+            border:  rgb(214, 211, 211) solid 1px;
+            margin-left: 10px;
+            margin-right: 10px;
+            height: 300px;
+            width: 280px;
+            border-radius: 10px;
+        }
+        .info1_2 {
+            grid-area: info1_2;
+            border:  rgb(214, 211, 211) solid 1px;
+            margin-left: 10px;
+            margin-right: 10px;
+            height: 300px;
+            width: 280px;
+            border-radius: 10px;
+        }
+        .info1_3 {
+            grid-area: info1_3;
+            border: rgb(214, 211, 211) solid 1px;
+            margin-left: 10px;
+            margin-right: 10px;
+            height: 300px;
+            width: 280px;
+            border-radius: 10px;
+        }
+        .info1_1:hover img, .info1_2:hover img, .info1_3:hover img {
+            opacity: .5;
+        }
+        .info1 img {
+            width: 100%;
+            height: 150px;
+            border-radius: 10px;
+        }
+        .info1 h3+div {
+            padding: 10px;
+            color: grey;
+        }
+        .info1 h3 {
+            padding: 10px;
+        }
+        .conhead {
+            font-size: 20px;
+            padding: 10px;
+            color: grey;
+        }
+        }
