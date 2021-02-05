@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" media="screen" type="text/css" href="login.css">
+
+
+</head>
+
+<body>
+    <div id=login-main>
+        <div onclick=homeAr() id="airtable-img">
+            <img src="https://images.cms.fivetran.com/mgtdf72hs0mx/6s3DvbJmIGnRBTM760Fz64/8a328770bc194d23f05d1cc2965517eb/connector_airtable-logo.png" />
+            <h2>Airtable</h2>
+
+        </div>
+        <div id="login-cont">
+            <div class="sign-flex">
+                <div>Sign-in </div>
+                <a href="https://airtable.com/forgot">Forgot Password?</a>
+            </div>
+
+            <form id="login-form">
+                <label for="Email"></label>
+                <input id="login-email" type="email" value="Email" />
+                <label for="Password"></label>
+                <input id="login-pwd" type="text" value="Password" />
+                <button id="sign-btn" type="submit" value="Sign-In">Sign-in</button>
+            </form>
+            <br />
+        </div>
+        <button id="google-ln">
+            <img
+                src="https://images.theconversation.com/files/93616/original/image-20150902-6700-t2axrz.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=1000&fit=clip" />
+            <div>Sign in with Google</div>
+        </button>
+        <div class="sign-flex sign-up">
+            <div class="display">
+                <div>Don't have an account</div>
+                <a href="https://airtable.com/signup">Sign-up for free </a>
+            </div>
+            <div class="last-up">
+                <div>
+                    <a href="https://airtable.com/sso/login">Sign in with SSO</a>
+                </div>
+                <div>
+                    <a href="https://appleid.apple.com/auth/authorize?client_id=com.airtable&redirect_uri=https%3A%2F%2Fairtable.com%2Fauth%2FappleLoginCallback&response_type=code%20id_token&scope=name%20email&response_mode=form_post&state=%7B%22type%22%3A%22login%22%2C%22loginData%22%3A%7B%22mobileHandoffBaggage%22%3A%7B%7D%7D%2C%22authCsrfToken%22%3A%22fe9239566a2349c055431470326d531f%22%7D">Sign in with Apple</a>
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+
+    </div>
+
+    <script src="files\script.js"></script>
+</body>
+
+<footer>
+    <div class="col-1">
+        <img src="https://airtable.com/images/favicon/baymax/apple-touch-icon.png">
+    </div>
+    <div class="col-2">
+        <ul>
+            <li><a href="#">Product</a></li>
+            <li><a href="#">Inspiration</a></li>
+            <li><a href="#">Marketplace</a></li>
+            <li><a href="#">Templates</a></li>
+            <li><a href="#">Universe</a></li>
+            <li><a href="#">Pricing</a></li>
+        </ul>
+    </div>
+    <div class="col-3">
+        <ul>
+            <li><a href="#">Events</a></li>
+            <li><a href="#">Case studies</a></li>
+            <li><a href="#">Security</a></li>
+            <li><a href="#">Enterprise</a></li>
+            <li><a href="#">API</a></li>
+            <li><a href="#">Integrations</a></li>
+            <li><a href="#">Download apps</a></li>
+        </ul>
+    </div>
+    <div class="col-4">
+        <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Creators magazine</a></li>
+            <li><a href="#">Contact sales</a></li>
+            <li><a href="#">Press</a></li>
+            <li><a href="#">Twitter</a></li>
+        </ul>
+    </div>
+    <div class="col-5">
+        <ul class="row-1">
+            <li><a href="#" id="hiring"> We’re hiring!</a></li>
+            <li>Questions?</li>
+            <li><a href="#">Explore our help center</a></li>
+        </ul>
+        <ul class="row-2">
+            <li><a href="#">Terms</a></li>
+            <li><a href="#">Privacy</a></li>
+            <li>© Airtable</li>
+        </ul>
+    </div>
+</footer>
+
+</html>
