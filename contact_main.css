@@ -365,6 +365,7 @@ footer div li #hiring:hover::after {
     }
 }
 
+
 #airtable-mg {
     display: flex;
     margin-left: 4%;
@@ -386,7 +387,9 @@ footer div li #hiring:hover::after {
     font-weight: 600;
     margin-left: 15px;
     padding-bottom: 5px;
-=======
+
+}
+
 body>#sales {
     background-color: rgb(71, 71, 71);
     width: 100%;
@@ -601,3 +604,144 @@ footer div li #hiring:hover::after {
     color: rgb(126, 126, 126);
 
 }
+
+@media only screen and (max-width: 800px) {
+    body>#sales {
+        grid-template: "read" "help";
+    }
+    h2 {
+        font-size: 20px;
+        line-height: 35px;
+    }
+    #sales>.sales_read {
+        color: white;
+        grid-area: read;
+        padding: 0px 20px;
+        width: 80%;
+        margin: 10px;
+        margin-left: 30px;
+        text-align: left;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .topbar {
+        display: none;
+    }
+    nav {
+        justify-content: space-between;
+    }
+    .logo {
+        width: 50%;
+    }
+    .navlist {
+        position: absolute;
+        flex-direction: column;
+        top: 50px;
+        align-items: left;
+        width: 100%;
+        background-color: white;
+        justify-content: space-evenly;
+        /* padding: 20PX 0 20PX 0; */
+        height: 100%;
+        transform: translateY(-120%);
+        border-top: 1px solid rgba(212, 212, 212, 0.397);
+        font-size: 20px;
+    }
+    .open {
+        transform: translateY(0%);
+        /* transition: transform 0.5s ease-out; */
+        ;
+    }
+    .over {
+        overflow-y: hidden;
+    }
+    .navlist ul {
+        flex-direction: column;
+        align-items: left;
+    }
+    .navlist ul:nth-child(2) li:nth-child(1) {
+        display: none;
+    }
+    .burger-menu {
+        display: block;
+        width: 20%;
+    }
+    .line-two {
+        margin-top: 10px;
+    }
+    body>#sales {
+        background-color: rgb(71, 71, 71);
+        width: 100%;
+        min-height: 70%;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        float: left;
+        display: grid;
+        grid-template: "read" "help";
+        gap: 20px;
+        padding: 30px;
+        margin: auto;
+        padding-bottom: 80px;
+    }
+    #form {
+        display: grid;
+        gap: 10px;
+        grid-template: "first last" "email job" "comp-name comp-size" "ques ques";
+        margin: auto;
+        margin-left: 10px;
+    }
+    #sales>.sales_help {
+        background-color: white;
+        border-radius: 10px;
+        margin: auto;
+        padding: 20px 10px;
+        width: 80%;
+        grid-area: help;
+        margin-left: 20px;
+    }
+    #sales>.sales_read {
+        color: white;
+        grid-area: read;
+        padding: 0px 10px;
+        width: 70%;
+        margin: 10px;
+        margin-left: 10px;
+        text-align: left;
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    body>#sales {
+        background-color: rgb(71, 71, 71);
+        width: 100%;
+        min-height: 70%;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        float: left;
+        display: grid;
+        grid-template: "read" "help";
+        gap: 20px;
+        padding: 30px;
+        margin: auto;
+        padding-bottom: 80px;
+    }
+    h2 {
+        font-size: 16px;
+        line-height: 35px;
+    }
+    #sales>.sales_read {
+        color: white;
+        grid-area: read;
+        padding: 0px 20px;
+        width: 70%;
+        margin: 10px;
+        margin-left: 20px;
+        text-align: left;
+    }
+    #form {
+        display: grid;
+        gap: 10px;
+        grid-template: "first" "last" "email" "job" "comp-name" "comp-size" "ques";
+        margin: auto;
+        margin-left: 10px;
+    }
