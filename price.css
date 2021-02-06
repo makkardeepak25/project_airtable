@@ -288,6 +288,9 @@ mark{
     margin: 1%;
     /* border: 1px solid green; */
 }
+.question-cont{
+    height: 25%;
+}
 #question-cont p{
     color: grey;
 }
