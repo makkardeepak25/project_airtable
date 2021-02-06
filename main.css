@@ -194,14 +194,22 @@ and (max-width : 320px) {
     text-align: center;
     font-size: 24px;
  }
- .band-logos{
+ .brand-logos{
      display: flex;
      justify-content: center;
      gap:25px;
      font-size: 28px;
      color: rgb(126, 126, 126);
  }
-
+@media screen and (max-width:720px){
+    .brand-logos{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap:0px;
+        font-size: 22px;
+        text-align: center;
+    }
+}
  /*-----------Intro----------*/
  .intro .row1{
      display: flex;
@@ -293,7 +301,7 @@ and (max-width : 320px) {
 
 /*Responsive*/
 
-@media screen and (max-width:600px){
+@media screen and (max-width:720px){
     .intro .row1{
         /* display: flex;
         padding-top: 50px; */
