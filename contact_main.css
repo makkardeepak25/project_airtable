@@ -1,3 +1,4 @@
+
 .topbar {
     padding: 10px;
     background-color: #f82b60;
@@ -385,4 +386,218 @@ footer div li #hiring:hover::after {
     font-weight: 600;
     margin-left: 15px;
     padding-bottom: 5px;
+=======
+body>#sales {
+    background-color: rgb(71, 71, 71);
+    width: 100%;
+    min-height: 70%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    float: left;
+    display: grid;
+    grid-template: "read help";
+    gap: 40px;
+    padding: 50px;
+    margin: auto;
+    padding-bottom: 80px;
+}
+
+#sales>.sales_read {
+    color: white;
+    grid-area: read;
+    padding: 0px 20px;
+    width: 100%;
+    margin: 10px;
+    margin-left: 30px;
+    text-align: left;
+}
+
+#sales a {
+    color: blue;
+}
+
+#sales>.sales_help {
+    background-color: white;
+    border-radius: 10px;
+    margin: auto;
+    padding: 20px;
+    width: 70%;
+    grid-area: help;
+    margin: auto;
+}
+
+#sales>.sales_read>p {
+    font-size: 14px;
+    line-height: 28px;
+    color: rgb(223, 221, 221);
+}
+
+#sales>.sales_read>p:nth-child(1) {
+    color: rgb(6, 6, 155);
+    font-size: 17px;
+}
+
+.sales_read>ul {
+    font-size: 14px;
+    line-height: 28px;
+    color: rgb(223, 221, 221);
+}
+
+h2 {
+    font-size: 24px;
+    line-height: 35px;
+}
+
+#sales>.sales-help {
+    margin-right: 40px;
+}
+
+#form {
+    display: grid;
+    gap: 10px;
+    grid-template: "first last" "email job" "comp-name comp-size" "ques ques";
+    margin: auto;
+    margin-left: 20px;
+}
+
+.sales_help h6 {
+    margin: 10px 0px;
+    font-size: 15px;
+    color: rgb(87, 86, 86);
+}
+
+.first {
+    grid-area: first;
+}
+
+.last {
+    grid-area: last;
+}
+
+.email {
+    grid-area: email;
+}
+
+.job {
+    grid-area: job;
+}
+
+.comp-name {
+    grid-area: comp-name;
+}
+
+.comp-size {
+    grid-area: comp-size;
+}
+
+.ques {
+    grid-area: ques;
+}
+
+#form>div>input {
+    width: 200px;
+    height: 30px;
+    background-color: rgb(231, 226, 226);
+    border-radius: 7px;
+    margin-bottom: 15px;
+}
+
+#form>.ques>input:nth-child(2) {
+    width: 90%;
+    height: 100px;
+    background-color: rgb(231, 226, 226);
+    border-radius: 7px;
+    margin-bottom: 15px;
+}
+
+button {
+    width: 88%;
+    height: 30px;
+    background-color: rgb(146, 143, 143);
+    color: white;
+    font-size: 18px;
+    margin-left: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+
+/* Footer */
+
+footer {
+    padding: 100px 50px 100px 50px;
+    display: flex;
+    justify-content: space-around;
+    font-family: sans-serif;
+}
+
+footer div ul {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+footer .col-1 img {
+    height: 50px;
+}
+
+footer .col-5 {
+    display: flex;
+    margin-top: 0;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+footer div li a {
+    color: rgb(126, 126, 126);
+    text-decoration: none;
+    position: relative;
+}
+
+footer div li a::after {
+    content: '';
+    display: block;
+    height: 2px;
+    background: #D6D6D6;
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
+footer div li a:hover::after {
+    background: #242424;
+    opacity: 0.8;
+}
+
+footer div li #hiring {
+    color: rgb(60, 126, 180);
+    position: relative;
+}
+
+footer div li #hiring:hover {
+    color: blue;
+}
+
+footer div li #hiring::after {
+    content: '';
+    display: block;
+    height: 2px;
+    background-color: rgb(60, 126, 180);
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
+footer div li #hiring:hover::after {
+    background-color: blue;
+}
+
+.col-5 .row-1 li:nth-child(2) {
+    font-size: 14px;
+    color: rgb(126, 126, 126);
+}
+
+.col-5 .row-2 li:nth-child(3) {
+    font-size: 12px;
+    color: rgb(126, 126, 126);
+
 }
