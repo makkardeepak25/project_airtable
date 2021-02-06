@@ -1,3 +1,136 @@
+.topbar {
+    padding: 10px;
+    background-color: #f82b60;
+    text-align: center;
+    color: white;
+    font-size: 16px;
+    font-family: sans-serif;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 20%;
+}
+
+.logo a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bolder;
+    color: black;
+    font-size: 26px;
+}
+
+.logo img {
+    height: 50px;
+}
+
+.navlist {
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.navlist ul {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.navlist ul li a {
+    color: black;
+    justify-content: space-around;
+}
+
+#nav-signup {
+    background-color: rgb(95, 121, 194);
+    padding: 10px;
+    color: white;
+    border-radius: 50px;
+    border: none;
+}
+
+.line-one {
+    height: 2px;
+    width: 25px;
+    background-color: rgb(0, 0, 0);
+}
+
+.line-two {
+    height: 2px;
+    width: 40px;
+    background-color: rgb(0, 0, 0);
+}
+
+#up-btn {
+    margin-left: 10px;
+}
+
+.burger-menu {
+    display: none;
+}
+
+@media screen and (max-width: 800px) {
+    .topbar {
+        display: none;
+    }
+    nav {
+        justify-content: space-between;
+    }
+    .logo {
+        width: 50%;
+    }
+    .navlist {
+        position: absolute;
+        flex-direction: column;
+        top: 50px;
+        align-items: left;
+        width: 100%;
+        background-color: white;
+        justify-content: space-evenly;
+        /* padding: 20PX 0 20PX 0; */
+        height: 100%;
+        transform: translateY(-120%);
+        border-top: 1px solid rgba(212, 212, 212, 0.397);
+        font-size: 20px;
+    }
+    .open {
+        transform: translateY(0%);
+        /* transition: transform 0.5s ease-out; */
+        ;
+    }
+    .over {
+        overflow-y: hidden;
+    }
+    .navlist ul {
+        flex-direction: column;
+        align-items: left;
+    }
+    .navlist ul:nth-child(2) li:nth-child(1) {
+        display: none;
+    }
+    .burger-menu {
+        display: block;
+        width: 20%;
+    }
+    .line-two {
+        margin-top: 10px;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    /* STYLES GO HERE */
+}
+
+
+/*=================Nav End=================*/
+
 body>#sales {
     background-color: rgb(71, 71, 71);
     width: 100%;
@@ -105,7 +238,7 @@ h2 {
 }
 
 #form>div>input {
-    width: 200px;
+    width: 80%;
     height: 30px;
     background-color: rgb(231, 226, 226);
     border-radius: 7px;
@@ -210,4 +343,46 @@ footer div li #hiring:hover::after {
 .col-5 .row-2 li:nth-child(3) {
     font-size: 12px;
     color: rgb(126, 126, 126);
+}
+
+@media only screen and (max-width: 800px) {
+    body>#sales {
+        grid-template: "read" "help";
+    }
+    h2 {
+        font-size: 20px;
+        line-height: 35px;
+    }
+    #sales>.sales_read {
+        color: white;
+        grid-area: read;
+        padding: 0px 20px;
+        width: 80%;
+        margin: 10px;
+        margin-left: 30px;
+        text-align: left;
+    }
+}
+
+#airtable-mg {
+    display: flex;
+    margin-left: 4%;
+    text-align: center;
+}
+
+#airtable-mg>img {
+    width: 80px;
+    height: 60px;
+}
+
+#up-form {
+    display: grid;
+    gap: 15px;
+    grid-template: "fname lname" "wmail wmail" "pass pass" "btn btn";
+    padding: 10px;
+    padding-top: 5px;
+    font-size: 15px;
+    font-weight: 600;
+    margin-left: 15px;
+    padding-bottom: 5px;
 }
