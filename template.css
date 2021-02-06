@@ -7,15 +7,6 @@ li{
     list-style: none;
 }
 
-.topbar{
-    padding: 10px;
-    background-color: #f82b60;
-    text-align: center;
-    color: white;
-    font-size: 16px;
-    font-family: sans-serif;
-}
-
 nav{
     display: flex;
     width: 100%;
@@ -83,7 +74,7 @@ footer div ul{
 }
 
 footer .col-1 img{
-    margin-left: 900px;
+    margin-left: 150px;
     margin-right: 50px;
     height: 50px;
 }
@@ -150,12 +141,16 @@ footer div li #hiring:hover::after{
 #whole {
     display: grid;
     grid-auto-columns: minmax(200px, 400px);
-    grid-template: "category content content content"
+    grid-template: "nav nav nav nav"
+                    "category content content content"
                     "footer footer footer footer";
     width: 90%;
     margin-left: auto;
     margin-right: auto;
     padding-top: 70px;
+}
+.nav {
+    grid-area: nav;
 }
 #category {
     grid-area: category;
@@ -704,7 +699,7 @@ button {
     @media only screen and (max-width: 830px) {
         #whole {
             display: grid;
-            grid-auto-columns: minmax(200px, 400px);
+            grid-auto-columns: minmax(100px, 400px);
             grid-template: "content content content"
                             "footer footer footer";
             width: 90%;
@@ -715,6 +710,7 @@ button {
         #category {
             grid-area: category;
             width: 80%;
+            display: none;
             /* position: fixed; */
         }
         #category img {
