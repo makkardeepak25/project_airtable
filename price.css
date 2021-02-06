@@ -1,3 +1,24 @@
+.font-family{
+    
+        font-family: 'GT Eesti Display',-apple-system,system-ui,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen-Sans,Ubuntu,Cantarell,'Helvetica Neue',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';
+        letter-spacing: .01em;
+        -webkit-font-smoothing: antialiased;
+        font-feature-settings: 'calt' 0;
+    
+}
+header{
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: rgb(255,255,255);
+}
+.h-btn{
+    background-color: #2d7ff9;
+    padding-bottom: 25px;
+}
+.body-container{
+    padding: 40px;  
+}
 /* pricing style */
 #pricing-layout{
      
@@ -123,7 +144,7 @@
     padding-right: 15px;
 }
 #question-cont{
-    height: 1200px;
+    height: 1000px;
     /* border: 1px solid red; */
 }
 mark{
@@ -141,7 +162,7 @@ mark{
     color: grey;
 }
 footer{
-     padding: 100px 50px 100px 50px;
+     padding: 50px 50px 100px 50px;
      display: flex;
      justify-content: space-around;
      font-family: sans-serif;
@@ -321,3 +342,225 @@ footer div li #hiring:hover::after{
   .slider.round:before {
     border-radius: 50%;
   }
+  .product-content1{
+      width: 100%;
+      height: 500px;
+      background-color: #2d7ff9;
+      color: #ffffff;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  }
+  .product-content1 h1{
+    width: 80%;
+    font-size: 70px;
+    font-weight: 800;
+    text-align: center;
+  }
+
+  .product-content2{
+    width: 100%;
+    height: 500px;
+    background-color: #2d7ff9;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .product-pill-btn{
+      padding-left: 40px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      padding-right: 40px;
+      border-radius: 50px;
+      outline: none;
+      border: none;
+      font-size: 18px;
+      font-size: 900;
+      color: #2d7ff9;
+      margin-bottom: 40px;
+      margin-top: 40px;
+  }
+  .product-pill-btn a{
+    text-decoration: none;
+    color: #2d7ff9;
+  }
+  .product-pill-btn-p{
+      width: 300px;
+      width: 300px;
+      text-align: center;
+      font-size: 14px;
+  }
+  .collabrate-with-any{
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+      /* margin: 50px; */
+  }
+  .collabrate-with-any-content-1{
+      width: 30%;
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
+      padding: 50px;
+  }
+  .collabrate-with-any-content-1 h1{
+    font-size: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-family: 'GT Eesti Display',-apple-system,system-ui,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen-Sans,Ubuntu,Cantarell,'Helvetica Neue',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';
+    letter-spacing: .01em;
+    -webkit-font-smoothing: antialiased;
+    font-feature-settings: 'calt' 0;
+    font-weight: 500;
+  }
+  .collabrate-with-any-content-1 p{
+    font-size: 18px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: gray;
+    font-family: 'GT Eesti Display',-apple-system,system-ui,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen-Sans,Ubuntu,Cantarell,'Helvetica Neue',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';
+    letter-spacing: .01em;
+    -webkit-font-smoothing: antialiased;
+    font-feature-settings: 'calt' 0;
+
+  }
+  .collabrate-with-any-content-1 a{
+    font-size: 18px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-family: 'GT Eesti Display',-apple-system,system-ui,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen-Sans,Ubuntu,Cantarell,'Helvetica Neue',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';
+    letter-spacing: .01em;
+    -webkit-font-smoothing: antialiased;
+    font-feature-settings: 'calt' 0;
+    color: #054ebb;
+    text-decoration: underline;
+    line-height: 20px;
+
+  }
+  .collabrate-with-any-content-2{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    height: 500px;
+    padding: 50px;
+}
+.product-nav ul{
+    display: flex;
+    flex-direction: row;
+    height: 60px;
+    align-items: center;
+    position: sticky;
+    top: 60;
+    
+}
+.product-nav>ul>li{
+    padding-left: 30px;
+}
+.social{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    /* margin: 50px; */
+}
+.social-content-1{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    padding: 50px;
+    padding-right: 150px;
+}
+.social-content-1 h1{
+  font-size: 40px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-family: 'GT Eesti Display',-apple-system,system-ui,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen-Sans,Ubuntu,Cantarell,'Helvetica Neue',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';
+  letter-spacing: .01em;
+  -webkit-font-smoothing: antialiased;
+  font-feature-settings: 'calt' 0;
+  font-weight: 500;
+}
+.social-content-1 p{
+  font-size: 18px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: gray;
+  font-family: 'GT Eesti Display',-apple-system,system-ui,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen-Sans,Ubuntu,Cantarell,'Helvetica Neue',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';
+  letter-spacing: .01em;
+  -webkit-font-smoothing: antialiased;
+  font-feature-settings: 'calt' 0;
+
+}
+.social-content-1 a{
+  font-size: 18px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-family: 'GT Eesti Display',-apple-system,system-ui,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen-Sans,Ubuntu,Cantarell,'Helvetica Neue',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';
+  letter-spacing: .01em;
+  -webkit-font-smoothing: antialiased;
+  font-feature-settings: 'calt' 0;
+  color: #054ebb;
+  text-decoration: underline;
+  line-height: 20px;
+
+}
+.social-content-2{
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  height: 500px;
+  padding: 50px;
+}
+.arbitale-sync-content{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    align-items: center; 
+}
+.arbitale-sync-content-1{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    height: 600px;
+    padding: 50px;
+  }
+  .arbitale-sync-content-2 {
+      padding: 50px;
+  }
+.arbitale-sync-content-2 span{
+background-color: #f82b60;
+padding: 5px;
+padding-left: 10px;
+padding-right: 10px;
+color: #ffffff;
+border-radius: 30px;
+margin-bottom: 40px;
+}
+.arbitale-sync-content-2 h1{
+font-size: 40px;
+padding-top: 50px;
+padding-bottom: 50px;
+font-family: 'GT Eesti Display',-apple-system,system-ui,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen-Sans,Ubuntu,Cantarell,'Helvetica Neue',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';
+  letter-spacing: .01em;
+  -webkit-font-smoothing: antialiased;
+  font-feature-settings: 'calt' 0;
+}
+.arbitale-sync-content-2 p{
+    font-size: 20px;
+    font-family: 'GT Eesti Display',-apple-system,system-ui,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen-Sans,Ubuntu,Cantarell,'Helvetica Neue',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';
+      letter-spacing: .01em;
+      -webkit-font-smoothing: antialiased;
+      font-feature-settings: 'calt' 0;
+      color: gray;
+    }
