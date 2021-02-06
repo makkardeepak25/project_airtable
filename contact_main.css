@@ -1,3 +1,4 @@
+
 .topbar {
     padding: 10px;
     background-color: #f82b60;
@@ -345,6 +346,26 @@ footer div li #hiring:hover::after {
     color: rgb(126, 126, 126);
 }
 
+@media only screen and (max-width: 800px) {
+    body>#sales {
+        grid-template: "read" "help";
+    }
+    h2 {
+        font-size: 20px;
+        line-height: 35px;
+    }
+    #sales>.sales_read {
+        color: white;
+        grid-area: read;
+        padding: 0px 20px;
+        width: 80%;
+        margin: 10px;
+        margin-left: 30px;
+        text-align: left;
+    }
+}
+
+
 #airtable-mg {
     display: flex;
     margin-left: 4%;
@@ -366,6 +387,7 @@ footer div li #hiring:hover::after {
     font-weight: 600;
     margin-left: 15px;
     padding-bottom: 5px;
+
 }
 
 body>#sales {
@@ -580,6 +602,7 @@ footer div li #hiring:hover::after {
 .col-5 .row-2 li:nth-child(3) {
     font-size: 12px;
     color: rgb(126, 126, 126);
+
 }
 
 @media only screen and (max-width: 800px) {
@@ -722,4 +745,3 @@ footer div li #hiring:hover::after {
         margin: auto;
         margin-left: 10px;
     }
-}
