@@ -63,6 +63,9 @@ nav{
 }
 /* -----------------nav end --------------- */
 /* -----------------footer -------------------- */
+#footer {
+    grid-area: footer;
+}
 footer{
     padding: 100px 50px 100px 50px;
     display: flex;
@@ -147,7 +150,8 @@ footer div li #hiring:hover::after{
 #whole {
     display: grid;
     grid-auto-columns: minmax(200px, 400px);
-    grid-template: "category content content content";
+    grid-template: "category content content content"
+                    "footer footer footer footer";
     width: 90%;
     margin-left: auto;
     margin-right: auto;
@@ -445,8 +449,9 @@ button {
 @media only screen and (max-width: 1100px) {
     #whole {
         display: grid;
-        grid-auto-columns: minmax(200px, 400px);
-        grid-template: "category content content content";
+        grid-auto-columns: minmax(100px, 300px);
+        grid-template: "category content content content"
+                        "footer footer footer footer";
         width: 90%;
         margin-left: auto;
         margin-right: auto;
@@ -700,7 +705,8 @@ button {
         #whole {
             display: grid;
             grid-auto-columns: minmax(200px, 400px);
-            grid-template: "content content content";
+            grid-template: "content content content"
+                            "footer footer footer";
             width: 90%;
             margin-left: auto;
             margin-right: auto;
