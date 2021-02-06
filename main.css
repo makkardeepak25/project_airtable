@@ -2,15 +2,18 @@
     padding: 0;
     margin: 0;
 }
+body{
+    font-family: sans-serif;
+}
+a{
+    text-decoration: none;
+}
 li{
     list-style: none;
 }
 
-a{
-    text-decoration: none;
-}
-
 /*=================Nav Start================*/
+
 .topbar{
     padding: 10px;
     background-color: #f82b60;
@@ -22,132 +25,134 @@ a{
 
 nav{
     display: flex;
-    width: 100%;
-    /* padding: 10px 0 10px 0; */
-    height: 50px;
-    font-family: sans-serif;
-    position: absolute;
-    background-color: white;
     align-items: center;
 }
-
 .logo{
-    /* background-color: rgb(255, 0, 242); */
-    width: 15%;
+    width: 20%;
 }
 .logo a{
-    text-align: end;
-    margin-right: 20px;
     display: flex;
     align-items: center;
-    justify-content: flex-end;
-    font-size: 24px;
+    justify-content: center;
+    font-weight: bolder;
     color: black;
-    gap:5px;
+    font-size: 26px;
 }
 .logo img{
-    height: 40px;
+    height: 50px;
 }
 .navlist{
     display: flex;
-    /* justify-content: space-around; */
-    width: 40%; 
-    /* background-color: rgb(238, 255, 0); */
-    padding: 10px;
-    gap: 50px;
-    font-size: 16px;
-    color: black;
-}
-.navlist li a{
-    color: black;
+    justify-content: space-around;
+    width:80% ;
 }
 
-.contact{
+.navlist ul {
     display: flex;
-    width: 30%;
-    /* background-color: rgb(60, 255, 0); */
-    justify-content:flex-end;
-    gap: 50px;
-    font-size: 16px;
+    gap: 30px;
     align-items: center;
 }
-.signup-btn{
-    width: 20%;
-    /* background-color: blue; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.navlist ul li a{
+    color: black;
 }
 #nav-signup{
-    background-color: rgb(81, 106, 158);
-    color: white;
-    width: 120px;
+    background-color: rgb(95, 121, 194);
     padding: 10px;
-    border: none;
+    color: white;
     border-radius: 50px;
-    height: 30px;
+    border: none;
 }
-.hamburger {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+.line-one{
+    height: 2px;
+    width: 25px;
+    background-color: rgb(0, 0, 0);
+}
+.line-two{
+    height: 2px;
+    width: 40px;
+    background-color: rgb(0, 0, 0);
+}
+
+.burger-menu{
     display: none;
 }
-.hamburger .line1{
-    height: 3px;
-    width: 30px;
-    background-color: black;
-}
 
-.hamburger .line2{
-    height: 3px;
-    width: 30px;
-    background-color: black;
-}
 
-/* Responsive Nav */
-
-@media screen and (max-width:600px){
+@media screen and (max-width: 720px) {
+    .topbar{
+        display: none;
+    }
     nav{
         justify-content: space-between;
     }
     .logo{
-        width: 100%;
-    }
-    .logo a{
-        justify-content: flex-start;
-    }
-    .signup-btn{
-        width: 100%;
-        justify-content: flex-end;
-    }
-    .hamburger {
-        display: block;
+        width: 50%;
     }
     .navlist{
-        position:absolute;
+        position: absolute;
         flex-direction: column;
-        background-color: white; 
-        width: 100%;
         top: 50px;
+        align-items: left;
+        width: 100%;
+        background-color: white;
+        justify-content: space-evenly;
+        /* padding: 20PX 0 20PX 0; */
+        height: 100%;
+        transform: translateY(-120%);
+        border-top: 1px solid rgba(212, 212, 212, 0.397);
+        font-size: 20px;
+    }
+    .open{
+        transform: translateY(0%);
+        /* transition: transform 0.5s ease-out; */;
+    }
+    .over{
+        overflow-y: hidden;
+    }
+    .navlist ul{
+        flex-direction: column;
+        align-items: left;
+    }
+    .navlist ul:nth-child(2) li:nth-child(1){
         display: none;
     }
-    .contact{
-        display: none;
+    .burger-menu{
+        display: block;
+        width: 20%;
+    }
+
+    .line-two{
+        margin-top: 10px;
     }
 }
 
+@media only screen
+and (max-width : 320px) {
+/* STYLES GO HERE */
+}
 /*=================Nav End=================*/
 
-.slider img{
-    height: 100%;
-    width: 100%;
-    
+.slider{
+    height: 700px;
+    background-image: url("https://static.airtable.com/images/hero_images/hero_image_1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: slider 10s infinite;
+}
+@keyframes slider{
+    0%{
+        background-image: url("https://static.airtable.com/images/hero_images/hero_image_1.jpg");
+    }
+    35%{
+        background-image: url("https://static.airtable.com/images/hero_images/hero_image_2.jpg");
+    }
+    75%{
+        background-image: url("	https://static.airtable.com/images/hero_images/hero_image_3.jpg");
+    }
 }
 .slider .title{
-    position: absolute;
-    top: 40%;
-    left: 10%;
+    padding: 60px 0 0 60px;
     color: white;
     font-family: sans-serif;
 }
@@ -170,15 +175,12 @@ nav{
     margin-top: 10px;
  }
  /*Responsive*/
-@media screen and(max-width:600px){
+@media screen and (max-width:600px){
     .slider .title h1{
-        font-size: 52px;
+        font-size: 42px;
      }
      .slider{
-         height: 500px;
-     }
-     .slider img{
-         height:100%;
+         line-height: 1.5;
      }
 }
  
@@ -192,14 +194,22 @@ nav{
     text-align: center;
     font-size: 24px;
  }
- .band-logos{
+ .brand-logos{
      display: flex;
      justify-content: center;
      gap:25px;
      font-size: 28px;
      color: rgb(126, 126, 126);
  }
-
+@media screen and (max-width:720px){
+    .brand-logos{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap:0px;
+        font-size: 22px;
+        text-align: center;
+    }
+}
  /*-----------Intro----------*/
  .intro .row1{
      display: flex;
@@ -291,7 +301,7 @@ nav{
 
 /*Responsive*/
 
-@media screen and (max-width:600px){
+@media screen and (max-width:720px){
     .intro .row1{
         /* display: flex;
         padding-top: 50px; */
@@ -414,7 +424,7 @@ footer div li #hiring:hover::after{
 }
 
 /*Responsive*/
-@media screen and(max-width:600px){
+@media screen and (max-width:600px){
     footer{
         padding: 100px 50px 100px 50px;
         /* display: flex;
@@ -430,3 +440,4 @@ footer div li #hiring:hover::after{
     }
 }
  /* ======================= FOOTER End======================= */
+
