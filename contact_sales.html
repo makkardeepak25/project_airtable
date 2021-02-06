@@ -1,8 +1,5 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+
 <html>
 
 <head>
@@ -17,12 +14,53 @@
 </head>
 
 <body>
+    <header>
+        <div class="topbar">
+            <p>Introducing the Airtable Platform. Power, Flexibility, and Control. See what’s new</p>
+        </div>
+        <nav>
+            <div class="logo">
+                <a href="index.html"><img src="https://airtable.com/images/favicon/baymax/apple-touch-icon.png">
+                    <p>Airtable</p>
+                </a>
+            </div>
+
+            <div class="navlist">
+                <ul>
+                    <li><a href="product.html">Products</a></li>
+                    <li><a href="template.html">Templates</a></li>
+                    <li>Universe</li>
+                    <li><a href="pricing.html">Pricing</a></li>
+                </ul>
+
+                <ul>
+                    <li><a href="contact_sales.html">Contact sales</a></li>
+                    <li>
+                        <a href="login.html">Sign in</a>
+                    </li>
+                    <li><a href="sign_up.html"><button id="nav-signup">Sign up for free</button></a></li>
+
+                </ul>
+            </div>
+
+            <div class="burger-menu">
+                <div class="line-one"></div>
+                <div class="line-two"></div>
+            </div>
+
+        </nav>
+    </header>
+
+    <!-- 
+    <div onclick=homeAr() id="airtable-mg">
+        <img src="https://images.cms.fivetran.com/mgtdf72hs0mx/6s3DvbJmIGnRBTM760Fz64/8a328770bc194d23f05d1cc2965517eb/connector_airtable-logo.png" />
+        <h2>Airtable</h2>
+    </div> -->
     <div id="sales">
         <div class="sales_read">
             <p>CONTACT OUR SALES TEAM</p>
             <h2>Reimagine the way your team works on Airtable.</h2>
-            <p>We’ve helped 200,000+ organizations build countless workflows across marketing, product, development,
-                design, operations, and more. Let’s explore how Airtable can work for you.</p>
+            <p>We’ve helped 200,000+ organizations build countless workflows across marketing, product, development, design, operations, and more. Let’s explore how Airtable can work for you.</p>
             <h3>Let's Talk</h3>
             <ul>
                 <li>Flexible pricing and packages that work for any size organization</li>
@@ -31,8 +69,7 @@
                 <li>Automated dashboards and reports that provide visibility to leadership</li>
             </ul>
             <p>Looking for <a href="https://airtable.com/support">Support</a></p>
-            <p>Are you a <a href="https://airtable.com/shr9DxhP6lU9slZE6">non-profit</a> or <a
-                    href="https://airtable.com/shrtaLSBL0Z0sLQnX">educational institute ?</a></p>
+            <p>Are you a <a href="https://airtable.com/shr9DxhP6lU9slZE6">non-profit</a> or <a href="https://airtable.com/shrtaLSBL0Z0sLQnX">educational institute ?</a></p>
 
         </div>
         <div class="sales_help">
@@ -40,41 +77,102 @@
             <form id="form">
                 <div class="first">
                     <h6>First Name*</h6>
-                    <input type="text">
+                    <input id="f-name" type="text">
                 </div>
 
                 <div class="last">
                     <h6>Last Name*</h6>
-                    <input type="text">
+                    <input id="l-name" type="text">
                 </div>
 
                 <div class="email">
                     <h6>Work Email*</h6>
-                    <input type="text">
+                    <input id="e-mail" type="text">
                 </div>
                 <div class="job">
                     <h6>Job Title*</h6>
-                    <input type="text">
+                    <input id="jobT" type="text">
                 </div>
                 <div class="comp-name">
                     <h6>Company Name*</h6>
-                    <input type="text">
+                    <input id="comp-name" type="text">
                 </div>
                 <div class="comp-size">
                     <h6>Company Size*</h6>
-                    <input type="number">
+                    <input id="comp-size" type="number">
                 </div>
                 <div class="ques">
                     <h6>What would you like help with?</h6>
-                    <input type="text">
+                    <input id="quest" type="text">
                 </div>
             </form>
-            <button>Submit</button>
+            <button id="sub-btn">Submit</button>
+            <p id="inform"></p>
 
 
         </div>
     </div>
-    <script src="files\script.js"></script>
+    <script type="text/javascript">
+        var subBtn = document.getElementById("sub-btn")
+
+        function contact(e) {
+            e.preventDefault();
+            var fname = document.getElementById("f-name");
+            var lname = document.getElementById("l-name");
+            var em = document.getElementById("e-mail");
+            var job = document.getElementById("jobT");
+            var cName = document.getElementById("comp-name");
+            var cSize = document.getElementById("comp-size");
+            var quest = document.getElementById("quest");
+            var p = document.getElementById("inform")
+
+            if (fname == "") {
+                p.textContent = "Fill First Name"
+
+            } else if (lname == "") {
+                p.textContent = "Fill Last Name"
+
+            } else if (em == "") {
+                p.textContent = "Enter email-id"
+
+            } else if (job == "") {
+                p.textContent = "Enter Job title"
+
+            } else if (cName == "") {
+                p.textContent = "Please add Company Name"
+
+            } else if (cSize == "") {
+                p.textContent = "Please add number of employee in company"
+
+            } else if (fname == "" || quest == "" || lname == "" || em == "" || job == "" || cName == "" || cSize == "") {
+                alert(p.textContent = "Any queries Please?")
+
+            } else if (fname != "" && quest != "" && lname != "" && em != "" && job != "" && cName != "" && cSize != "") {
+                window.location.href = "index.html"
+            }
+        }
+        subBtn.addEventListener("click", contact)
+
+
+        // navslide()
+
+        // function homeAr() {
+        //     window.location.href = "index.html"
+        // }
+        // const navslide = () => {
+        //     const hamburger = document.querySelector(".burger-menu");
+        //     const navlinks = document.querySelector(".navlist");
+        //     const b = document.body;
+
+        //     hamburger.addEventListener("click", () => {
+        //         navlinks.classList.toggle("open")
+        //         b.classList.toggle("over")
+
+        //     })
+        // }
+
+        // navslide()
+    </script>
 </body>
 <footer>
     <div class="col-1">
