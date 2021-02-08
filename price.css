@@ -274,7 +274,7 @@ header{
     padding-right: 15px;
 }
 #question-cont{
-    height: 1000px;
+    height: 1200px;
     /* border: 1px solid red; */
 }
 mark{
@@ -380,7 +380,7 @@ footer div li #hiring:hover::after{
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
     padding-top: 30px;
-    line-height: 30px;
+    line-height: 25px;
 }
 #pro{
     border-top-right-radius: 10px;
@@ -419,8 +419,8 @@ footer div li #hiring:hover::after{
 .switch {
     position: relative;
     display: inline-block;
-    width: 50px;
-    height: 24px;
+    width: 48px;
+    height: 28px;
   }
   
   .switch input { 
@@ -437,42 +437,42 @@ footer div li #hiring:hover::after{
     right: 0;
     bottom: 0;
     background-color: #ccc;
-    -webkit-transition: .3s;
-    transition: .3s;
+    -webkit-transition: .4s;
+    transition: .4s;
   }
   
-  .slider:before {
+  .slider1:before {
     position: absolute;
     content: "";
-    height: 20px;
-    width: 20px;
+    height: 21px;
+    width: 21px;
     left: 4px;
     bottom: 4px;
     background-color: white;
-    -webkit-transition: .3s;
-    transition: .3s;
+    -webkit-transition: .4s;
+    transition: .4s;
   }
   
-  input:checked + .slider {
+  input:checked + .slider1 {
     background-color: #2196F3;
   }
   
-  input:focus + .slider {
+  input:focus + .slider1 {
     box-shadow: 0 0 1px #2196F3;
   }
   
-  input:checked + .slider:before {
-    -webkit-transform: translateX(26px);
-    -ms-transform: translateX(26px);
-    transform: translateX(26px);
+  input:checked + .slider1:before {
+    -webkit-transform: translateX(21px);
+    -ms-transform: translateX(21px);
+    transform: translateX(21px);
   }
   
   /* Rounded sliders */
-  .slider.round {
-    border-radius: 14px;
+  .slider1.round {
+    border-radius: 34px;
   }
   
-  .slider.round:before {
+  .slider1.round:before {
     border-radius: 50%;
   }
   .product-content1{
