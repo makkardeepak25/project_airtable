@@ -47,7 +47,6 @@
 
         </nav>
     </header>
-
     <div class="body-container">
         <div id="pricing-layout" class="pricing-layout">
             <div id="simple-pricing-cont" class="simple-pricing-cont">
@@ -81,29 +80,31 @@
             <div id="simple-pricing-cont">
                 <div class="simple-pricing">
                     <h4"> pay <label class="switch">
-                            <input type="checkbox">
+                            <input type="checkbox" id="mySwitch" onclick="myFunction()">
                             <span class="slider1 round"></span>
                         </label> month per anuual</h4>
                 </div>
                 <div class="free" id='free'>
                     <h1>$0</h1>
                     <p>user / month</p>
-                    <h4 style="text-decoration: underline;color:blue; margin-top: 30px;">Sign up free</h4>
+                    <a style="text-decoration: underline;color:blue; margin-top: 40px;"> Sign up free </a>
                 </div>
                 <div class="pro" id='free'>
-                    <h1>$10</h1>
+                    <h1 id = 'price1'>$10</h1>
+                    <h1 id = 'price2' style="display: none;">$12</h1>
                     <p>user / month <br>billed annually</p>
-                    <h4 style="text-decoration: underline;color:blue;">Try for free</h4>
+                    <a style="text-decoration: underline;color:blue; margin-top: 35px; margin-bottom: 35px;"> Try for free </a>
                 </div>
                 <div class="plus" id='free'>
-                    <h1>$20</h1>
+                    <h1 id="price3">$20</h1>
+                    <h1 id = 'price4' style="display: none;">$24</h1>
                     <p>user / month <br>billed annually
                     </p>
-                    <h4 style="text-decoration: underline;color:blue;">Try for free</h4>
+                    <a style="text-decoration: underline;color:blue;"> Try for free </a>
                 </div>
                 <div class="enterprise" id='free'>
                     <h1 style="padding-top: 30px;">&#10032</h1>
-                    <h4 style="text-decoration: underline; margin-top: 25px;">Contect us</h4>
+                    <a style="text-decoration: underline; margin-top: 25px;"> Contect us </a>
                 </div>
             </div>
             <div id="simple-pricing-cont">
@@ -171,7 +172,7 @@
                 </div>
             </div>
             <div id="simple-pricing-cont">
-                <div class="simple-pricing"><h4 style="grey">ESSENTIALS </h4></div>
+                <div class="simple-pricing"><h4 style="color: grey;">ESSENTIALS </h4></div>
                 <div class="free">
                     <h4>&#10004</h4>
                 </div>
@@ -891,5 +892,26 @@
             </div>
         </footer> 
 </body>
+<script>
+    function myFunction() {
+      var x = document.getElementById("mySwitch").checked;
+      var price1 = document.getElementById("price1");
+      var price2 = document.getElementById("price2");
+      var price3 = document.getElementById("price3");
+      var price4 = document.getElementById("price4");
+      
+      if (x === true) {
+        price1.style.display = "none";
+        price3.style.display = "none";
+        price2.style.display = "block";
+        price4.style.display = "block";
 
+      } else {
+        price1.style.display = "block";
+        price3.style.display = "block";
+        price2.style.display = "none";
+        price4.style.display = "none";
+      }
+    }
+    </script>
 </html>
